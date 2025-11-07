@@ -155,6 +155,26 @@ section {
   text-align: center;
 }
 
+.courses-section{
+  background: linear-gradient(to right, var(--dark-navy), var(--light-navy));
+  margin: 0 auto;
+  
+}
+
+.courses-heading{
+    color: var(--lightest-slate);
+    text-align: right;
+    font-size: 2rem;
+}
+
+.courses-content{
+  margin-left: 7rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--slate);
+  text-align: right;
+}
+
 .about-heading{
     color: var(--lightest-slate);
     text-align: left;
@@ -190,3 +210,72 @@ section {
   text-decoration: none;
 }
 
+
+.courses-grid {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--lightest-slate) var(--dark-navy);
+}
+
+
+
+
+
+.course-card {
+  flex: 0 0 240px;          /* width (was 320px) */
+  min-height: 400px;        /* shorter height */
+  background-color: #112240;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(2, 12, 27, 0.7);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(2, 12, 27, 0.5);
+}
+
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.folder-icon {
+  font-size: 1.8rem;
+  color: var(--green);
+}
+
+.link-icon {
+  font-size: 1.3rem;
+  color: var(--slate);
+  cursor: pointer;
+}
+
+.course-title {
+  color: var(--lightest-slate);
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.course-desc {
+  color: var(--slate);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.course-tags {
+  color: var(--dark-slate);
+  font-size: 0.8rem;
+  font-family: 'Fira Mono', monospace;
+}
