@@ -17,3 +17,11 @@ if (emailLink) {
     emailLink.style.color = 'var(--green)';
   });
 }
+
+
+// Register Service Worker correctly for GitHub Pages
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/portfolio/sw.js')
+    .then(() => console.log('Service Worker registered'))
+    .catch(err => console.log('SW registration failed', err));
+}
